@@ -3,6 +3,7 @@ import { FaWhatsapp } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { Navbar } from './Navbar';
+import pics from '../assets/images/rossy1.png'
 
 export function Home() {
 
@@ -88,7 +89,7 @@ export function Home() {
         <div className="flex-1 flex justify-center items-center relative h-[300px] sm:h-[400px] lg:h-full w-full">
           <div className="absolute w-[250px] h-[220px] sm:w-[400px] sm:h-[350px] bg-orange-500/10 rounded-full"></div>
           <img
-            src="/src/assets/images/rossy1.png"
+            src={pics}
             alt="Profile"
             className="relative z-10 h-[280px] sm:h-[400px] lg:h-[550px] object-cover grayscale rounded-lg"
           />
