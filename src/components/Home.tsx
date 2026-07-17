@@ -4,8 +4,12 @@ import { FaGithub } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { Navbar } from './Navbar';
 import pics from '../assets/images/rossy1.png'
+import { useNavigate } from "react-router-dom";
 
 export function Home() {
+
+  const Navigate = useNavigate()
+
 
   const handleDownload = () => {
     const link = document.createElement('a')
@@ -13,6 +17,13 @@ export function Home() {
     link.download = '/my cv.pdf'
     link.click()
   }
+
+  const handleHireMe = () =>{
+    Navigate('/HireMe')
+  }
+
+
+
 
   return (
     <div className="flex justify-center p-4 sm:p-10 m-4 sm:m-10 bg-gray-900/90 rounded-2xl min-h-[800px] relative overflow-hidden">
@@ -60,7 +71,7 @@ export function Home() {
           </div>
 
           <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-4">
-            <a href="/HireMe" className="bg-orange-500 cursor-pointer hover:bg-orange-600 text-white px-6 py-3 rounded-md font-medium transition">
+            <a href="" onClick={handleHireMe} className="bg-orange-500 cursor-pointer hover:bg-orange-600 text-white px-6 py-3 rounded-md font-medium transition">
               Hire Me
             </a>
             <button onClick={handleDownload} className="border cursor-pointer border-gray-500 hover:border-white

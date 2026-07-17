@@ -48,7 +48,7 @@ export function HireMe() {
                             onChange={(e) =>
                                 setFormData({ ...formData, name: e.target.value })}
                             value={formData.name}
-                            required
+                            required 
                             className='w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none 
             focus:border-blue-500' />
                     </div>

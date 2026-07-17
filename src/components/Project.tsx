@@ -15,7 +15,7 @@ export function Project() {
             title: "admin dashboard",
             description: "A full CRUD admin panel for managing members,Features include form validation with React Hook Form and Yup, paginated data views with skeleton loaders, optimistic UI updates, and a custom delete confirmation modal so fast to load and was deployed to my github account, using the tools:",
             tech: ["React", "Typscript", "Tanstack query", "axios", "github"],
-            link: "#"
+            link: "https://rossytech3833.github.io/AdminDashboard/"
         },
         {
             title: "landing page",
