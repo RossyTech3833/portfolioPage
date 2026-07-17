@@ -71,9 +71,10 @@ export function Home() {
           </div>
 
           <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-4">
-            <a href="" onClick={handleHireMe} className="bg-orange-500 cursor-pointer hover:bg-orange-600 text-white px-6 py-3 rounded-md font-medium transition">
+            < button onClick={handleHireMe} className="bg-orange-500 cursor-pointer hover:bg-orange-600 text-white px-6 py-3 rounded-md font-medium transition">
               Hire Me
-            </a>
+            </button>
+
             <button onClick={handleDownload} className="border cursor-pointer border-gray-500 hover:border-white
              text-white px-6 py-3 rounded-md font-medium transition">
               Download CV
